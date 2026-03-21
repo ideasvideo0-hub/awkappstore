@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Launcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c2f33; 
+        }
+        .launcher-container { 
+            width: 400px; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            background-color: #2C2F33; 
+        }
+        .select-label { 
+            font-size:13px; 
+            margin-bottom:6px; 
+            display:block; 
+            color:#cbd5e1; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="launcher-container">
+        <div style="text-align:center;margin-bottom:14px;">
+            <img src="minecraft-logo.png" alt="Minecraft Logo" style="max-width:220px;">
+        </div>
+        <div style="margin-bottom:20px;">
+            <label class="select-label" for="version-select">Select Minecraft Version</label>
+            <select id="version-select" style="width:100%;padding:10px;border-radius:8px;border:1px solid #4A4A4A;background:#36393F;color:#e6eef6;">
+                <option value="">Select Minecraft Version</option>
+                <option value="Minecraft 1.12.html">Minecraft 1.12</option>
+                <option value="MC1.21.html">Minecraft 1.21</option>
+                <option value="Minecraft 1.8 2x fps.html">Minecraft 1.8 (2x FPS)</option>
+                <option value="Minecraft 1.8 (3).html">Minecraft 1.8</option>
+            </select>
+        </div>
+        <button class="play-button" id="play-button">Play</button>
+
+        <div class="news-section">
+            <h3 style="margin:0 0 6px 0;font-size:15px;color:#d1d5db;">Latest News</h3>
+            <div style="font-size:13px;color:#9ca3af;">Minecraft 1.21 Update released!</div>
+        </div>
+    </div>
+    <script src="launcher.js"></script>
+</body>
+</html>
